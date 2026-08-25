@@ -1,0 +1,17 @@
+
+#Ask the user for the distance in kilometers
+distance=float (input("Please input the distance in kilometers>>>")) 
+conversion=0.621371
+answer= distance*conversion
+print("Distance in miles:",answer)
+
+#Ask the user if they want to convert another distance, if not then program is finished
+ask=input("Do you want to convert another distance? (yes/no): ")
+if ask=="yes":
+    d2=float(input("Enter distance in kilometers: "))
+    m2=d2*conversion
+    print("Distance in miles:" ,m2)
+else:
+    print("Converted sucessfully!")
+
+ 
